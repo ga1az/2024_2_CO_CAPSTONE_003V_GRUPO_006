@@ -1,0 +1,28 @@
+{
+  "name": "@mesalista/server",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "bun test",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build --compile --minify-whitespace --minify-syntax ./src/index.ts --outfile server"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.5",
+    "@ga1az/elysiajs-jwt": "^1.1.1-beta.0.1",
+    "@mesalista/database": "workspace:*",
+    "@mesalista/email": "workspace:*",
+    "@supabase/supabase-js": "^2.46.0",
+    "elysia": "latest",
+    "elysia-helmet": "^2.0.0",
+    "logestic": "^1.2.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "@mesalista/tsconfig": "workspace:*"
+  },
+  "module": "src/index.js"
+}

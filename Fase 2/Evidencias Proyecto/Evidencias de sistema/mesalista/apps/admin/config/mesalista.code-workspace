@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "name": "🚀 @mesalista/admin",
+      "path": ".."
+    },
+    {
+      "name": "🚀 @mesalista/server",
+      "path": "../../server"
+    },
+    {
+      "name": "🚀 @mesalista/web",
+      "path": "../../web"
+    },
+    {
+      "name": "🚀 @mesalista/api",
+      "path": "../../../packages/api"
+    },
+    {
+      "name": "📦 @mesalista/database",
+      "path": "../../../packages/database"
+    },
+    {
+      "name": "📦 @mesalista/email",
+      "path": "../../../packages/email"
+    },
+    {
+      "name": "📦 @mesalista/tsconfig",
+      "path": "../../../packages/tsconfig"
+    }
+  ],
+  "settings": {}
+}

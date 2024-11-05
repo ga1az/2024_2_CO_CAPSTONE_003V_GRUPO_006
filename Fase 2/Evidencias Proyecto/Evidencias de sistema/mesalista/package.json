@@ -1,0 +1,37 @@
+{
+  "name": "mesalista",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:server": "turbo dev --filter=@mesalista/server",
+    "dev:web": "turbo dev --filter=@mesalista/web",
+    "dev:admin": "turbo dev --filter=@mesalista/admin",
+    "dev:admin-server": "turbo dev --filter=@mesalista/admin --filter=@mesalista/server",
+    "dev:web-server": "turbo dev --filter=@mesalista/web --filter=@mesalista/server",
+    "docker": "bun scripts/docker.ts",
+    "docker:server": "docker build -t mesalista-server -f ./apps/server/Dockerfile .",
+    "docker:web": "docker build -t mesalista-web -f ./apps/web/Dockerfile .",
+    "docker:admin": "docker build -t mesalista-admin -f ./apps/admin/Dockerfile .",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "knip": "^5.30.0",
+    "turbo": "^2.1.1",
+    "typescript": "^5.5.4",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "bun@1.1.26",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "22.7.0"
+  }
+}

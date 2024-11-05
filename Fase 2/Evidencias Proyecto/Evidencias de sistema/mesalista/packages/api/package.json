@@ -1,0 +1,12 @@
+{
+  "name": "@mesalista/api",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "devDependencies": {
+    "@mesalista/tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@mesalista/server": "workspace:*",
+    "@elysiajs/eden": "^1.1.3"
+  }
+}

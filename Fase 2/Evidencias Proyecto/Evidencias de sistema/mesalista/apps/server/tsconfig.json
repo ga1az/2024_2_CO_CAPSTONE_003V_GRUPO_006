@@ -1,0 +1,9 @@
+{
+  "extends": "@mesalista/tsconfig/base.json",
+  "include": ["src", "test"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "noEmit": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
